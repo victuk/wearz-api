@@ -1,0 +1,28 @@
+admin1@admin1.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiMyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzODI5MDcyMX0.N_sfH-oA5U8WPZO__-teTjAJvsI4vnCkhKCul-O9j6w","email":"admin1@admin1.com","role":"admin"}
+
+admin2@admin2.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiOSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYzODI5MDcyMX0.DM85lJAIMMG-s4pL3YQxjtaFn-o_dVuNJHDvA2mi_o0","email":"admin2@admin2.com","role":"admin"}
+
+user1@user1.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM4MjkwNzIyfQ.CVEE7a8S1nxGA0JH5Sp0VRWD_0luSv5JXpHlrlBct3E","email":"user1@user1.com","role":"user"}
+
+user2@user2.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJjMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM4MjkwNzIyfQ.dFQh33tTxI0e39Fotzu4_4f0t_p6xzaMAtfTVaUiKCs","email":"user2@user2.com","role":"user"}
+
+manager1@manager1.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiNCIsInJvbGUiOiJtYW5hZ2VyIiwiY29tcGFueURldGFpbHMiOiI2MWE2NTUyMDU5ZGJhY2JiMWJjYzFiYjMiLCJpYXQiOjE2MzgyOTA3MjJ9.wDbbRZUcbL0VGAYGcW9d74KMif3Ak7lD6sLLAGttO7I","email":"manager1@manager1.com","role":"manager"}
+
+manager2@manager2.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiYSIsInJvbGUiOiJtYW5hZ2VyIiwiY29tcGFueURldGFpbHMiOiI2MWE2NTUyMDU5ZGJhY2JiMWJjYzFiYjkiLCJpYXQiOjE2MzgyOTA3MjJ9.leEk8PJpawgj3f1S-5mBxiGuVPvnuw777o8oQPh2dkY","email":"manager2@manager2.com","role":"manager"}
+
+staff1@staff1.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiNSIsInJvbGUiOiJzdGFmZiIsImNvbXBhbnlEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmIzIiwibWFuYWdlckRldGFpbHMiOiI2MWE2NTUyMDU5ZGJhY2JiMWJjYzFiYjQiLCJpYXQiOjE2MzgyOTA3MjJ9.4YukQzM-Bns4MzsADpVxPO7KngkIOSwZ357OZoe2PzQ","email":"staff1@staff1.com","role":"staff"}
+
+staff2@staff2.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiNiIsInJvbGUiOiJzdGFmZiIsImNvbXBhbnlEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmIzIiwibWFuYWdlckRldGFpbHMiOiI2MWE2NTUyMDU5ZGJhY2JiMWJjYzFiYjQiLCJpYXQiOjE2MzgyOTA3MjJ9.M2bSRCOIXd6CBtZHYJBxfzdeAc9XXdjcgNeuskxqzQs","email":"staff2@staff2.com","role":"staff"}
+
+staff3@staff3.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiYiIsInJvbGUiOiJzdGFmZiIsImNvbXBhbnlEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmI5IiwibWFuYWdlckRldGFpbHMiOiI2MWE2NTUyMTU5ZGJhY2JiMWJjYzFiYmEiLCJpYXQiOjE2MzgyOTA3MjJ9.6khNyvbVkx6SCKUINAAJq3EPmwKAVzmgc5UQjtHhCAA","email":"staff3@staff3.com","role":"staff"}
+
+staff4@staff4.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiYyIsInJvbGUiOiJzdGFmZiIsImNvbXBhbnlEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmI5IiwibWFuYWdlckRldGFpbHMiOiI2MWE2NTUyMTU5ZGJhY2JiMWJjYzFiYmEiLCJpYXQiOjE2MzgyOTA3MjJ9.4BWolyocvnaWdDLAzB6EuOMuEFe2kSzhVsyFcq7R22s","email":"staff4@staff4.com","role":"staff"}
+
+driver1@driver1.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiNyIsInJvbGUiOiJkcml2ZXIiLCJjb21wYW55RGV0YWlscyI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiMyIsIm1hbmFnZXJEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmI0IiwiaWF0IjoxNjM4MjkwNzIyfQ.8-SivaD1Vpf7o3_X4d79kS_tT_uQUR7TKU_bB5gmhfI","email":"driver1@driver1.com","role":"driver"}
+
+driver2@driver2.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiOCIsInJvbGUiOiJkcml2ZXIiLCJjb21wYW55RGV0YWlscyI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiMyIsIm1hbmFnZXJEZXRhaWxzIjoiNjFhNjU1MjA1OWRiYWNiYjFiY2MxYmI0IiwiaWF0IjoxNjM4MjkwNzIyfQ.3MpFBB64h3weoi85cSuAdZSwCfT7SBVXYw3DWlHoG7I","email":"driver2@driver2.com","role":"driver"}
+
+driver3@driver3.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiZCIsInJvbGUiOiJkcml2ZXIiLCJjb21wYW55RGV0YWlscyI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiOSIsIm1hbmFnZXJEZXRhaWxzIjoiNjFhNjU1MjE1OWRiYWNiYjFiY2MxYmJhIiwiaWF0IjoxNjM4MjkwNzIzfQ.vIWVxPVFcIvvsuWiWh_xP8Ry_dVJomIGZZS4fnSbWMg","email":"driver3@driver3.com","role":"driver"}
+
+driver4@driver4.com: {"status":true,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYTY1NTIxNTlkYmFjYmIxYmNjMWJiZSIsInJvbGUiOiJkcml2ZXIiLCJjb21wYW55RGV0YWlscyI6IjYxYTY1NTIwNTlkYmFjYmIxYmNjMWJiOSIsIm1hbmFnZXJEZXRhaWxzIjoiNjFhNjU1MjE1OWRiYWNiYjFiY2MxYmJhIiwiaWF0IjoxNjM4MjkwNzIzfQ.zUEOQTmrCyDa1BYxo2Bj2uJTkYeAvRgBc-6lp7nqFZM","email":"driver4@driver4.com","role":"driver"}
+
