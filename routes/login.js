@@ -22,7 +22,9 @@ router.post('/', (req, res) => {
                     if (isMatch) {
                         if (user.role == 'user' || user.role == 'admin') {
                             const payload = { id: user.id, role: user.role};
-                            const token = jwt.sign(payload, jwtOptions.secretOrKey);
+                            const token = jwt.sign(payload, jwtOptions.secretOrKey, {
+                                expiresIn: '24h'
+                            });
                             res.json({ status: true, token, email: user.email, role: user.role });
                         }
 
