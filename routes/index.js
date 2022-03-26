@@ -75,8 +75,8 @@ router.post("/clothe", authLogin, async function (req, res) {
 });
 
 router.get("/clothe/:type", authLogin, async function (req, res) {
-  const specificClothe = await wardrobeSchema.wardrobe.findById(
-    req.params.type,
+  const specificClothe = await wardrobeSchema.wardrobe.find(
+    {ownerId: req.decoded.id, clotheType: req.params.type},
     ""
   );
   res.json(specificClothe);
