@@ -28,6 +28,11 @@ router.get("/try-ml", async function (req, res) {
   }
 });
 
+router.get("/checkgender", authLogin, async function(req, res) {
+  const gender = await regUser.findById(req.decoded.id, 'gender');
+  res.json({gender});
+});
+
 router.get("/clothes", authLogin, async function (req, res) {
   const allClothes = await wardrobeSchema.wardrobe.find(
     { ownerId: req.decoded.id },
