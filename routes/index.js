@@ -11,22 +11,22 @@ var axios = require("axios");
 
 // var cloudinary = require('cloudinary').v2;
 
-router.get("/try-ml", async function (req, res) {
-  try {
-    let response = await axios.post(
-      "https://cloth-prediction-algorithm.herokuapp.com/identify-picture",
-      {
-        picture:
-          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1029520080.jpg",
-      }
-    );
-    console.log(response);
-    res.send(response);
-  } catch (error) {
-    console.log("error");
-    res.send(error);
-  }
-});
+// router.get("/try-ml", async function (req, res) {
+//   try {
+//     let response = await axios.post(
+//       "https://cloth-prediction-algorithm.herokuapp.com/identify-picture",
+//       {
+//         picture:
+//           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1029520080.jpg",
+//       }
+//     );
+//     console.log(response);
+//     res.send(response);
+//   } catch (error) {
+//     console.log("error");
+//     res.send(error);
+//   }
+// });
 
 router.get("/checkgender", authLogin, async function(req, res) {
   const gender = await regUser.findById(req.decoded.id, 'gender');
@@ -50,7 +50,6 @@ router.post("/clothe", authLogin, async function (req, res) {
         picture: req.body.picture
       }
     );
-    console.log(response.data);
  
   var clotheType = response.data.pictureType;
   var picture = req.body.picture;
