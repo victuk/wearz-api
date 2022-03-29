@@ -82,6 +82,11 @@ router.get("/clothe/:type", authLogin, async function (req, res) {
 });
 
 router.delete("/clothe/:id", authLogin, async function (req, res) {
+  cloudinary.uploader.destroy(req.body.publicId, async function(error, result) {
+    if(error) {
+      console.log(error);
+    }
+    console.log(result);
   const deletedClothe = await wardrobeSchema.wardrobe.findByIdAndDelete(
     req.params.id,
     ""
@@ -89,6 +94,7 @@ router.delete("/clothe/:id", authLogin, async function (req, res) {
   res.json({
     success: true,
     deleted: deletedClothe,
+  });
   });
 });
 

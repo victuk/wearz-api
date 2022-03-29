@@ -19,11 +19,7 @@ jwtOptions.secretOrKey = process.env.secretkey;
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var registerRouter = require('./routes/registeruser');
-var registerCompanyOwnerRouter = require('./routes/registerCompanyOwner');
-var registerWorkersRouter = require('./routes/companyRegisterWorkers');
 var loginRouter = require('./routes/login');
-var swaggerJsdoc = require("swagger-jsdoc");
-var swaggerUi = require("swagger-ui-express");
 require('dotenv').config();
 var app = express();
 
@@ -37,9 +33,9 @@ mongoose.connect(process.env.mongoConnection, { useNewUrlParser: true, useUnifie
 // db.on("error", error => console.log(error));
 
 cloudinary.config({
-  cloud_name: 'realitypacefoundation',
-  api_key: '314139385432777',
-  api_secret: 'yRJpupmP_ZYimDgWimVFvnFQdhc',
+  cloud_name: 'dae4sosbl',
+  api_key: '283128793578546',
+  api_secret: '5n2fLu0S97IIA0u5acfTd56zwIg',
   secure: true
 });
 
@@ -57,41 +53,6 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-const options = {
-  definition: {
-    openapi: "3.0.0",
-    info: {
-      title: "TApp Documentation with Swagger",
-      version: "0.1.0",
-      description:
-        "Simple CRUD documentation made with swagger.",
-      license: {
-        name: "MIT",
-        url: "https://spdx.org/licenses/MIT.html",
-      },
-      contact: {
-        name: "Victor Peter",
-        url: "https://vred.netlify.app",
-        email: "ukokjnr@gmail.com",
-      },
-    },
-    servers: [
-      {
-        url: "http://localhost:4000/v1/",
-      },
-    ],
-  },
-  apis: ["./routes/documentation.js"],
-};
-
-const specs = swaggerJsdoc(options);
-app.use(
-  "/api-docs",
-  swaggerUi.serve,
-  swaggerUi.setup(specs, { explorer: true })
-);
 
 app.use('/v1/', indexRouter);
 app.use('/v1/users', usersRouter);
