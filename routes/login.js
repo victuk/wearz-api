@@ -14,6 +14,7 @@ router.post('/', (req, res) => {
         const email = req.body.email;
         const password = req.body.password;
         regUser.getUserByEmail(email, (err, user) => {
+            if(err) console.log(err);
             if (!user) {
                 res.json({ status: false, message: 'The user does not exist!' });
             } else {

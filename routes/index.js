@@ -9,7 +9,7 @@ var axios = require("axios");
 // const hasAccess = require('../auth/accessControl');
 // const isRestricted = require('../auth/isRestricted');
 
-// var cloudinary = require('cloudinary').v2;
+var cloudinary = require('cloudinary').v2;
 
 // router.get("/try-ml", async function (req, res) {
 //   try {
