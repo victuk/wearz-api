@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
 // var allSchema = require('../models/allSchema');
-// var passport = require('passport');
 var wardrobeSchema = require("../models/wardrobe");
 var regUser = require("../models/register");
 const authLogin = require("../auth/loginAuth");
