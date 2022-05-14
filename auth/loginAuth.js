@@ -12,7 +12,7 @@ function authLogin(req, res, next){
                 return res.json({ success: false, message: 'Failed to authenticate token.' });
             } else {
                 req.decoded = decoded;
-                User.findById(req.decoded.id, 'status', (err, user) => {
+                User.findById(req.decoded.id, (err, user) => {
                     
                     if (err) {
                         return console.log(err);

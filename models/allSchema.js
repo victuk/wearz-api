@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const User = require('./register');
-const UserSchema = mongoose.model('User',User.User).Schema;
 
 const notes = new Schema({
     title: String,
     body: String,
-    ownerId: String,
+    ownerId: UserSchema.Types.ObjectId,
     createDate: Date
 });
 

@@ -20,6 +20,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var registerRouter = require('./routes/registeruser');
 var loginRouter = require('./routes/login');
+let orderRouter = require('./routes/orders');
 require('dotenv').config();
 var app = express();
 
@@ -60,6 +61,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/v1/', indexRouter);
 app.use('/v1/users', usersRouter);
 app.use('/v1/register', registerRouter);
+app.use('/v1/order', orderRouter);
 // app.use('/v1/registercompany', registerCompanyOwnerRouter);
 // app.use('/v1/registerworkers', registerWorkersRouter);
 app.use('/v1/login', loginRouter);
