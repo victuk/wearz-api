@@ -91,7 +91,7 @@ router.post('/reset-password', async function(req, res) {
 router.put('/skinType', authLogin, async function(req, res) {
    let modSkinType = await regUser.findByIdAndUpdate(req.decoded.id, {
     skinType: req.body.skinType
-  });
+  }, {new: true});
 
   res.json({
     success: true,
