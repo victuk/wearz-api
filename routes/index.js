@@ -44,7 +44,7 @@ router.post("/clothe", authLogin, async function (req, res) {
   // return console.log(req.body);
   // let { clotheType, picture, publicId } = req.body
     let response = await axios.post(
-      "https://cloth-prediction-algorithm.herokuapp.com/identify-picture",
+      "https://cloth-prediction-ml.onrender.com/identify-picture",
       {
         picture: req.body.picture
       }
