@@ -43,6 +43,8 @@ router.get("/clothes", authLogin, async function (req, res) {
 router.post("/clothe", authLogin, async function (req, res) {
   // return console.log(req.body);
   // let { clotheType, picture, publicId } = req.body
+
+  try {
     let response = await axios.post(
       "https://cloth-prediction-ml.onrender.com/identify-picture",
       {
@@ -70,6 +72,10 @@ router.post("/clothe", authLogin, async function (req, res) {
     }
     res.json({ status: true, savedWear });
   });
+  } catch(error) {
+    console.log(error);
+    res.status(500).send(error.message);
+  }
 });
 
 router.get("/clothe/:type", authLogin, async function (req, res) {
